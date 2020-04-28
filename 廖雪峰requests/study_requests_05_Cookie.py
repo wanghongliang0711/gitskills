@@ -30,5 +30,6 @@ print(f"--------{url}-------------")
 print(r_1.url)
 print(r_1.text)
 
-
+# 耗时多少秒
+print(r_1.elapsed.total_seconds())
 
