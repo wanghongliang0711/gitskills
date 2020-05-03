@@ -29,3 +29,7 @@ r = requests.post(url, files=upload_files)
 # r = requests.post(url, headers=headers, files=upload_files)  # 写了headers 反而报错？？
 print(r.text)
 pprint(r.json())
+print("****************************")
+files = {'file':open('favicon.ico', 'rb')}
+r = requests.post("http://httpbin.org/post", files=files)
+print(r.text)
