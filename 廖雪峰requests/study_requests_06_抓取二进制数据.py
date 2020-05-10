@@ -14,7 +14,12 @@ print(r.content)
 # 保存图片
 with open('favicon.ico', 'wb') as f:
     f.write(r.content)
-
+#     f.close()
+# print(f)
+# if f:
+#     print("ffffffff")
+# else:
+#     print("44444")
 print(r.status_code)
 if r.status_code == 200:
     print("status : 200")

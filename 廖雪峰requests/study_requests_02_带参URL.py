@@ -11,7 +11,8 @@ url = 'https://www.douban.com/'
 
 r = requests.get(url, headers=headers, params={'q':'python','cat':'1001'})  # 豆瓣首页
 print("--------https://www.douban.com/-------------")
-print(r.url)
+print(r.url)                 
+print(r.request.url)
 
 print("--------检测编码-------------")
 print(r.encoding)

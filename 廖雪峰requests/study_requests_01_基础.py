@@ -19,6 +19,9 @@ print(r.text)
 
 
 
+r.encoding = "utf-8"  # 输出中文
+r.raise_for_status()   # 不是200 抛出异常 try except
+r.encoding = r.apparent_encoding  # 可以使用apparent_encoding查看真实编码 自动获取编码，不用每次都输  r.encoding = "utf-8"  了 ？？？
 
 
 
